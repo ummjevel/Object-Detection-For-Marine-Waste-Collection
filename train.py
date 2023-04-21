@@ -1,6 +1,7 @@
 import torch
 from ultralytics import YOLO
 
+
 def main():
     model = YOLO('yolov8n.pt', device='gpu')
     model.to('cuda')
@@ -17,5 +18,5 @@ def main():
     )
 
 
-if __name__=="__main__":
+if __name__== "__main__":
     main()
