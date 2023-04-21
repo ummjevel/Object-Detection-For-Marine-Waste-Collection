@@ -6,7 +6,7 @@ def main():
     model.to('cuda')
     
     results = model.train(
-        data='underwater.yaml',
+        data='underwater_cuda.yaml',
         imgsz=640,
         epochs=100,
         patience=5,
