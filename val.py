@@ -3,6 +3,5 @@
 import torch
 from ultralytics import YOLO
 
-model = YOLO("model.pt")
+model = YOLO("runs/detect/yolov8n_underwater2/weights/best.pt")
 model.val()
-model.val(data='underwater_cuda.yaml')
